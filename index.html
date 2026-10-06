@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SH교육컨설팅 대표 배상희 - 생성형 AI, 디지털 리터러시, 리더십 전문 기업교육 파트너</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0F172A',      // Slate 900 (Main Deep Dark)
+                            indigo: '#1E293B',    // Slate 800 (Card background)
+                            accent: '#D946EF',    // Fuchsia 500 (SH Pink Accent)
+                            lightpink: '#FDF2F8', // Pink 50 (Soft highlight)
+                            gray: '#64748B'       // Slate 500 (Text)
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght=300;400;500;600;700;800&family=Noto+Sans+KR:wght=300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans KR', sans-serif;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #E879F9 0%, #D946EF 50%, #A21CAF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .border-gradient {
+            border-image: linear-gradient(to right, #D946EF, #3B82F6) 1;
+        }
+        .hero-pattern {
+            background-color: #0f172a;
+            background-image: radial-gradient(at 0% 0%, rgba(217, 70, 239, 0.1) 0, transparent 50%), 
+                              radial-gradient(at 100% 100%, rgba(59, 130, 246, 0.1) 0, transparent 50%);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0F172A;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D946EF;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden antialiased selection:bg-fuchsia-500 selection:text-white">
+
+<!-- Header & Navigation -->
+<header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-slate-200/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+            <!-- Logo Section -->
+            <div class="flex-shrink-0 flex items-center gap-3">
+                <a href="#home" class="flex items-center gap-2 group">
+                    <img class="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
+                         src="https://i.ifh.cc/j6Ab45.png" 
+                         alt="SH교육컨설팅 로고" 
+                         onerror="this.src='SH_Logo.png'; this.onerror=function(){ this.src='https://placehold.co/120x45/ffffff/D946EF?text=SH+Consulting'; }">
+                    <span class="hidden sm:block text-lg font-bold tracking-tight text-slate-800">
+                        SH교육컨설팅 <span class="text-xs text-fuchsia-600 block -mt-1 font-medium">Share & Help</span>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="text-sm font-semibold text-slate-600 hover:text-fuchsia-600 transition-colors">프로필</a>
+                <a href="#expertise" class="text-sm font-semibold text-slate-600 hover:text-fuchsia-600 transition-colors">전문분야</a>
+                <a href="#roadmap" class="text-sm font-semibold text-slate-600 hover:text-fuchsia-600 transition-colors">주요이력</a>
+                <a href="#philosophy" class="text-sm font-semibold text-slate-600 hover:text-fuchsia-600 transition-colors">교육철학</a>
+                <a href="#clients" class="text-sm font-semibold text-slate-600 hover:text-fuchsia-600 transition-colors">출강기록</a>
+                <a href="#contact" class="inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-lg text-sm font-bold text-white bg-gradient-to-r from-fuchsia-600 to-pink-600 hover:from-fuchsia-700 hover:to-pink-700 shadow-md hover:shadow-lg transition-all duration-200">
+                    <i class="fa-solid fa-calendar-check mr-2"></i>강의 문의
+                </a>
+            </nav>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-lg text-slate-500 hover:text-fuchsia-600 hover:bg-slate-100 focus:outline-none transition-colors" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="sr-only">메뉴 열기</span>
+                    <i class="fa-solid fa-bars text-xl" id="menu-icon-bars"></i>
+                    <i class="fa-solid fa-xmark text-xl hidden" id="menu-icon-close"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation Panel -->
+    <div class="md:hidden hidden bg-white border-b border-slate-200 shadow-xl transition-all duration-300" id="mobile-menu">
+        <div class="px-4 pt-2 pb-6 space-y-2">
+            <a href="#about" class="block px-3 py-3 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-fuchsia-600 transition-all">프로필</a>
+            <a href="#expertise" class="block px-3 py-3 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-fuchsia-600 transition-all">전문분야</a>
+            <a href="#roadmap" class="block px-3 py-3 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-fuchsia-600 transition-all">주요이력</a>
+            <a href="#philosophy" class="block px-3 py-3 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-fuchsia-600 transition-all">교육철학</a>
+            <a href="#clients" class="block px-3 py-3 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-fuchsia-600 transition-all">출강기록</a>
+            <div class="pt-4 px-3">
+                <a href="#contact" class="w-full flex items-center justify-center px-4 py-3 border border-transparent rounded-lg text-base font-bold text-white bg-gradient-to-r from-fuchsia-600 to-pink-600 shadow-md">
+                    <i class="fa-solid fa-calendar-check mr-2"></i>강의 문의 신청
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero-pattern pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden relative min-h-[90vh] flex items-center">
+    <!-- Decorative background elements -->
+    <div class="absolute inset-0 z-0 opacity-40">
+        <div class="absolute top-20 left-10 w-72 h-72 bg-fuchsia-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-20 right-10 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Profile Text Content -->
+            <div class="lg:col-span-7 text-white space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-fuchsia-500/10 border border-fuchsia-400/20 text-fuchsia-300 text-xs sm:text-sm font-semibold tracking-wide">
+                    <span class="flex h-2 w-2 relative">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-fuchsia-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-fuchsia-500"></span>
+                    </span>
+                    생성형 AI & 디지털 리터러시 & 리더십 최고 강사
+                </div>
+                
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                    배움이 곧 변화가 되는<br>
+                    <span class="text-gradient">실습형 맞춤 교육</span>의 힘
+                </h1>
+                
+                <p class="text-base sm:text-lg md:text-xl text-slate-300 font-medium max-w-2xl mx-auto lg:mx-0 leading-relaxed italic border-l-4 border-fuchsia-500 pl-4 py-1 bg-fuchsia-950/20 rounded-r-lg">
+                    "기술은 도구일 뿐, 변화를 만드는 힘은<br class="sm:hidden"> '배운 것을 당장 써보는 용기'에서 나옵니다."
+                </p>
+                
+                <p class="text-sm sm:text-base text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    SH교육컨설팅 대표 배상희는 교육공학 기반 실습형 커리큘럼 설계를 기반으로 대기업, 공공기관, 대학교에서 현장 적용 중심의 가치를 전파하고 있습니다.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                    <a href="#contact" class="px-6 py-3.5 rounded-xl text-base font-bold text-white bg-gradient-to-r from-fuchsia-600 via-pink-600 to-purple-600 hover:from-fuchsia-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-fuchsia-500/20 hover:-translate-y-0.5 text-center">
+                        <i class="fa-solid fa-paper-plane mr-2"></i>강의 의뢰하기
+                    </a>
+                    <a href="#expertise" class="px-6 py-3.5 rounded-xl text-base font-bold text-slate-200 bg-slate-800/80 hover:bg-slate-800 hover:text-white border border-slate-700/80 transition-all text-center">
+                        전문 교육 분야 보기 <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Stats summary -->
+                <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800/60 max-w-md mx-auto lg:mx-0">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-fuchsia-400">98%</div>
+                        <div class="text-xs text-slate-400 mt-1">평균 교육 만족도</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-blue-400">100+</div>
+                        <div class="text-xs text-slate-400 mt-1">공공기관·기업 출강</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400">5,000+</div>
+                        <div class="text-xs text-slate-400 mt-1">누적 교육 수료생</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Profile Image with Elegant Frames -->
+            <div class="lg:col-span-5 flex justify-center relative">
+                <div class="relative w-72 sm:w-80 md:w-96 lg:w-full max-w-[380px] aspect-[4/5] rounded-3xl overflow-hidden group shadow-2xl border-4 border-slate-800 bg-slate-900">
+                    <!-- Photo -->
+                    <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                         src="https://i.ifh.cc/fJ17BF.png" 
+                         alt="배상희 대표 강사 프로필 사진" 
+                         onerror="this.src='그림1.jpg'; this.onerror=function(){ this.src='https://placehold.co/400x500/0f172a/ffffff?text=Bae+Sang-hee'; }">
+                    
+                    <!-- Decorative overlay gradient -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                    
+                    <!-- Caption on Image -->
+                    <div class="absolute bottom-6 left-6 right-6 text-white">
+                        <p class="text-xs font-bold text-fuchsia-400 tracking-wider uppercase mb-1">SH Education Consulting</p>
+                        <h3 class="text-2xl font-black">배상희 <span class="text-sm font-medium text-slate-300">대표 / 대표강사</span></h3>
+                        <p class="text-xs text-slate-300 mt-1">교육공학 기반 현장 실무형 교수설계</p>
+                    </div>
+                </div>
+
+                <!-- Background Frame Accents -->
+                <div class="absolute -top-4 -left-4 w-12 h-12 border-t-4 border-l-4 border-fuchsia-500 rounded-tl-2xl"></div>
+                <div class="absolute -bottom-4 -right-4 w-12 h-12 border-b-4 border-r-4 border-blue-500 rounded-br-2xl"></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- About / Profile Section -->
+<section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-base font-bold text-fuchsia-600 tracking-wider uppercase">PROFILE</h2>
+            <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">전문성과 신뢰를 기반으로 혁신을 설계합니다</p>
+            <div class="mt-4 h-1 w-16 bg-gradient-to-r from-fuchsia-600 to-pink-600 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            
+            <!-- Bio Summary & Key Values -->
+            <div class="lg:col-span-5 space-y-6">
+                <div class="bg-gradient-to-br from-slate-900 to-slate-800 p-8 rounded-3xl text-white shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-fuchsia-500/10 rounded-full filter blur-2xl"></div>
+                    
+                    <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-address-card text-fuchsia-400"></i>
+                        배상희 | SH교육컨설팅 대표
+                    </h3>
+                    
+                    <div class="space-y-4 text-sm text-slate-300 leading-relaxed">
+                        <p>
+                            공공기관 및 기업을 대상으로 <strong>생성형 AI, 디지털 리터러시, 에듀테크, 변화관리, 조직소통 및 회복탄력성</strong> 교육을 활발하게 운영 중인 교육공학 및 실무 교육 전문가입니다.
+                        </p>
+                        <p>
+                            복잡한 신기술이나 경영 이론을 학습자의 눈높이에 맞추어 재해석하고, <strong>'배운 즉시 실무에 사용 가능한 실습 중심 프로그램'</strong>으로 완성하는 것에 차별화된 노하우를 가지고 있습니다.
+                        </p>
+                        <p>
+                            사용자 경험(UX)과 조직의 성과 창출을 모두 고려하는 설계적 관점으로, 기업별 전사 AI 리터러시 강화 및 디지털 트랜스포메이션의 실현을 주도합니다.
+                        </p>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-slate-700/60 flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 text-fuchsia-300 text-xs font-semibold border border-fuchsia-500/20">#생성형AI교육</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 text-fuchsia-300 text-xs font-semibold border border-fuchsia-500/20">#디지털리터러시</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 text-fuchsia-300 text-xs font-semibold border border-fuchsia-500/20">#교육공학전문가</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 text-fuchsia-300 text-xs font-semibold border border-fuchsia-500/20">#기업교육강사</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 text-fuchsia-300 text-xs font-semibold border border-fuchsia-500/20">#AI채용컨설팅</span>
+                    </div>
+                </div>
+
+                <!-- Connect / SNS Buttons -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex flex-col gap-4">
+                    <h4 class="text-sm font-bold text-slate-700 uppercase tracking-wide">공식 소셜 미디어 및 네트워크 채널</h4>
+                    <div class="grid grid-cols-2 gap-3">
+                        <a href="https://www.relalab.kr/mentor_details.php?mentor_id=354" target="_blank" class="flex items-center gap-2 p-3 bg-white rounded-xl border border-slate-200 hover:border-fuchsia-500 hover:shadow-sm transition-all text-sm font-medium text-slate-800">
+                            <i class="fa-solid fa-graduation-cap text-fuchsia-500 text-lg"></i>
+                            <span>리라랩 공식 프로필</span>
+                        </a>
+                        <a href="https://blog.naver.com" target="_blank" class="flex items-center gap-2 p-3 bg-white rounded-xl border border-slate-200 hover:border-emerald-500 hover:shadow-sm transition-all text-sm font-medium text-slate-800">
+                            <i class="fa-solid fa-square-rss text-emerald-500 text-lg"></i>
+                            <span>네이버 블로그</span>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="flex items-center gap-2 p-3 bg-white rounded-xl border border-slate-200 hover:border-pink-500 hover:shadow-sm transition-all text-sm font-medium text-slate-800">
+                            <i class="fa-brands fa-instagram text-pink-500 text-lg"></i>
+                            <span>인스타그램</span>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="flex items-center gap-2 p-3 bg-white rounded-xl border border-slate-200 hover:border-red-500 hover:shadow-sm transition-all text-sm font-medium text-slate-800">
+                            <i class="fa-brands fa-youtube text-red-500 text-lg"></i>
+                            <span>유튜브 채널</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Current Roles & Affiliations -->
+            <div class="lg:col-span-7 space-y-6">
+                <h3 class="text-2xl font-bold text-slate-800 border-l-4 border-fuchsia-600 pl-3">주요 핵심 직책</h3>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    
+                    <!-- Role Card 1 -->
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-fuchsia-500 hover:bg-white transition-all group">
+                        <div class="w-12 h-12 rounded-xl bg-fuchsia-100 flex items-center justify-center text-fuchsia-600 mb-4 group-hover:bg-fuchsia-600 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-building-user text-lg"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900">SH교육컨설팅 대표</h4>
+                        <p class="text-xs text-fuchsia-600 mt-0.5 font-semibold">대표 / 교육 기획 및 컨설턴트</p>
+                        <p class="text-sm text-slate-500 mt-2 leading-relaxed">공공기관·대기업 생성형 AI 도입 전략 설계, 맞춤 실무 실습 시나리오 기획 및 교육 환경 컨설팅 수행</p>
+                    </div>
+
+                    <!-- Role Card 2 -->
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-blue-500 hover:bg-white transition-all group">
+                        <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center text-blue-600 mb-4 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-user-shield text-lg"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900">부산노동권익센터 대표강사</h4>
+                        <p class="text-xs text-blue-600 mt-0.5 font-semibold">노동조직 디지털 역량 소통 전임</p>
+                        <p class="text-sm text-slate-500 mt-2 leading-relaxed">종사자를 위한 디지털 역량 강화, 조직 소통, 감정노동 관리, 갈등 해결 중심의 차별화된 강의 실행</p>
+                    </div>
+
+                    <!-- Role Card 3 -->
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-indigo-500 hover:bg-white transition-all group">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-100 flex items-center justify-center text-indigo-600 mb-4 group-hover:bg-indigo-600 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-shield-halved text-lg"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900">병무청·해병대 위촉 강사</h4>
+                        <p class="text-xs text-indigo-600 mt-0.5 font-semibold">사회복무연수센터 & 해병대리더십센터</p>
+                        <p class="text-sm text-slate-500 mt-2 leading-relaxed">청년·장병 대상 디지털 스마트 행정, 셀프리더십, 위기관리 소통, 하이브리드 교수 게임화 과정 전담</p>
+                    </div>
+
+                    <!-- Role Card 4 -->
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-emerald-500 hover:bg-white transition-all group">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-600 mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-briefcase text-lg"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900">공공부문 규제혁신 강사</h4>
+                        <p class="text-xs text-emerald-600 mt-0.5 font-semibold">인사혁신처 & 노사발전재단</p>
+                        <p class="text-sm text-slate-500 mt-2 leading-relaxed">인사혁신처 규제혁신 전문강사 및 노사발전재단 내일센터 경력 설계 전문가로 공직 사회 변화 주도</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Expertise Section -->
+<section id="expertise" class="py-20 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-base font-bold text-fuchsia-600 tracking-wider uppercase">EXPERTISE</h2>
+            <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">전문 강의 및 컨설팅 영역</p>
+            <p class="mt-4 text-slate-500 text-sm sm:text-base">교육공학 설계 기반으로 각 주제별 학습자 상태를 최적의 성과로 연결시키는 4대 커리큘럼입니다.</p>
+            <div class="mt-4 h-1 w-16 bg-gradient-to-r from-fuchsia-600 to-pink-600 mx-auto rounded-full"></div>
+        </div>
+
+        <!-- Interactive Tabs Navigation -->
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-10">
+            <button onclick="switchTab('ai')" id="tab-btn-ai" class="tab-btn px-5 py-3 rounded-xl text-sm font-bold shadow-sm transition-all bg-fuchsia-600 text-white flex items-center gap-2">
+                <i class="fa-solid fa-robot"></i>생성형 AI & 디지털 리터러시
+            </button>
+            <button onclick="switchTab('pedagogy')" id="tab-btn-pedagogy" class="tab-btn px-5 py-3 rounded-xl text-sm font-bold shadow-sm transition-all bg-white text-slate-700 hover:bg-slate-50 flex items-center gap-2 border border-slate-200">
+                <i class="fa-solid fa-laptop-code"></i>에듀테크 & 하이브리드 교수법
+            </button>
+            <button onclick="switchTab('career')" id="tab-btn-career" class="tab-btn px-5 py-3 rounded-xl text-sm font-bold shadow-sm transition-all bg-white text-slate-700 hover:bg-slate-50 flex items-center gap-2 border border-slate-200">
+                <i class="fa-solid fa-id-card-clip"></i>AI 채용 & 커리어 컨설팅
+            </button>
+            <button onclick="switchTab('leadership')" id="tab-btn-leadership" class="tab-btn px-5 py-3 rounded-xl text-sm font-bold shadow-sm transition-all bg-white text-slate-700 hover:bg-slate-50 flex items-center gap-2 border border-slate-200">
+                <i class="fa-solid fa-people-group"></i>리더십 & 소통 & 조직문화
+            </button>
+        </div>
+
+        <!-- Tab Content Blocks -->
+        <div class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-xl min-h-[400px]">
+            
+            <!-- Tab: 생성형 AI & 디지털 리터러시 -->
+            <div id="tab-content-ai" class="tab-pane block space-y-8 animate-fadeIn">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 bg-fuchsia-50 rounded-lg text-fuchsia-600 text-xs font-bold">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>가장 강력하게 추천하는 대표 모듈
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-slate-900">생성형 AI & 디지털 리터러시</h3>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                            비전공자와 일반 행정 실무자도 두려움 없이 AI를 바로 업무에 활용할 수 있도록 돕습니다. 업무 자동화, 데이터 분석, 아이디어 빌딩까지 하루 만에 완수하는 실습 중심 교육입니다.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3">
+                                <span class="flex items-center justify-center w-6 h-6 rounded-full bg-fuchsia-100 text-fuchsia-600 text-xs mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <p class="text-sm font-semibold text-slate-700">생성형 AI 도입 및 실무 적용 시나리오 기획, 가이드라인 설계</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="flex items-center justify-center w-6 h-6 rounded-full bg-fuchsia-100 text-fuchsia-600 text-xs mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <p class="text-sm font-semibold text-slate-700">기획서 작성, 이메일 실무 서신, 보고서 완성을 돕는 스마트행정</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="flex items-center justify-center w-6 h-6 rounded-full bg-fuchsia-100 text-fuchsia-600 text-xs mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <p class="text-sm font-semibold text-slate-700">공공·기업 데이터 기반 의사결정을 돕는 비전공자용 데이터 리터러시</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Detailed Curriculum Highlights Box -->
+                    <div class="lg:col-span-5 bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200">
+                        <h4 class="text-base font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4">대표 커리큘럼 구성</h4>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center text-sm border-b border-slate-100 pb-2">
+                                <span class="font-medium text-slate-700">스마트 행정을 위한 AI 오피스</span>
+                                <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1 rounded-full font-bold">4 Hours</span>
+                            </li>
+                            <li class="flex justify-between items-center text-sm border-b border-slate-100 pb-2">
+                                <span class="font-medium text-slate-700">공공기관을 위한 데이터 리터러시 기초</span>
+                                <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1 rounded-full font-bold">6 Hours</span>
+                            </li>
+                            <li class="flex justify-between items-center text-sm border-b border-slate-100 pb-2">
+                                <span class="font-medium text-slate-700">생성형 AI 프롬프트 설계 & 디자인</span>
+                                <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1 rounded-full font-bold">3 Hours</span>
+                            </li>
+                            <li class="flex justify-between items-center text-sm">
+                                <span class="font-medium text-slate-700">실전 ChatGPT 보고서 작성 실무</span>
+                                <span class="text-xs bg-fuchsia-100 text-fuchsia-700 px-2.5 py-1 rounded-full font-bold">Best 4H</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab: 에듀테크 & 하이브리드 교수법 -->
+            <div id="tab-content-pedagogy" class="tab-pane hidden space-y-8 animate-fadeIn">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 bg-fuchsia-50 rounded-lg text-fuchsia-600 text-xs font-bold">
+                            <i class="fa-solid fa-graduation-cap"></i>상호작용 극대화의 핵심 솔루션
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-slate-900">에듀테크 & 하이브리드 교수법</h3>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                            메타버스, 온라인 협업툴, 실무 게이미피케이션 요소를 도입하여 비대면이나 하이브리드 환경에서도 100% 몰입하는 참여형 교수법을 교육합니다. 사내 강사 양성 및 대학교수법 혁신을 위한 핵심 과정입니다.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3">
+                                <span class="flex items-center justify-center w-6 h-6 rounded-full bg-fuchsia-100 text-fuchsia-600 text-xs mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <p class="text-sm font-semibold text-slate-700">게이미피케이션 및 실시간 상호작용 온라인 툴(Mural, Miro, Padlet) 활용법</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="flex items-center justify-center w-6 h-6 rounded-full bg-fuchsia-100 text-fuchsia-600 text-xs mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <p class="text-sm font-semibold text-slate-700">메타버스 플랫폼 및 디지털 디바이스(3D펜, 드론 등) 연계 참여형 수업 설계</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="flex items-center justify-center w-6 h-6 rounded-full bg-fuchsia-100 text-fuchsia-600 text-xs mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <p class="text-sm font-semibold text-slate-700">사내 강사와 교수자들의 교육 성과를 위한 수업 설계 및 피드백 구조 설계 컨설팅</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200">
+                        <h4 class="text-base font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4">대표 커리큘럼 구성</h4>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center text-sm border-b border-slate-100 pb-2">
+                                <span class="font-medium text-slate-700">학습자의 흥미를 자극하는 게이미피케이션 수업</span>
+                                <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1 rounded-full font-bold">4 Hours</span>
+                            </li>
+                            <li class="flex justify-between items-center text-sm border-b border-slate-100 pb-2">
+                                <span class="font-medium text-slate-700">메타버스로 구현하는 실시간 액티비티</span>
+                                <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1 rounded-full font-bold">3 Hours</span>
+                            </li>
+                            <li class="flex justify-between items-center text-sm border-b border-slate-100 pb-2">
+                                <span class="font-medium text-slate-700">스마트 워크와 협업을 돕는 온라인 툴킷</span>
+                                <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1 rounded-full font-bold">5 Hours</span>
+                            </li>
+                            <li class="flex justify-between items-center text-sm">
+                                <span class="font-medium text-slate-700">사내 강사를 위한 하이브리드 교수 설계</span>
+                                <span class="text-xs bg-fuchsia-100 text-fuchsia-700 px-2.5 py-1 rounded-full font-bold">Best 8H</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab: AI 채용 & 커리어 컨설팅 -->
+            <div id="tab-content-career" class="tab-pane hidden space-y-8 animate-fadeIn">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 bg-fuchsia-50 rounded-lg text-fuchsia-600 text-xs font-bold">
+                            <i class="fa-solid fa-briefcase"></i>커리어 성공을 위한 실전 로드맵
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-slate-900">AI 채용 & 커리어 컨설팅</h3>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                            기업의 AI 면접 및 역량 검사 트렌드를 철저히 분석하고, 개인 맞춤 커리어 혁신 시나리오를 설계합니다. 취업 준비생부터 직무 전향을 꿈꾸는 이직 준비 자를 위한 초밀착 코칭입니다.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3">
+                                <span class="flex items-center justify-center w-6 h-6 rounded-full bg-fuchsia-100 text-fuchsia-600 text-xs mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <p class="text-sm font-semibold text-slate-700">AI 채용 평가 방식(역량검사 등)에 맞춤화된 직무 중심 자기소개서 첨삭</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="flex items-center justify-center w-6 h-6 rounded-full bg-fuchsia-100 text-fuchsia-600 text-xs mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <p class="text-sm font-semibold text-slate-700">생성형 AI 비서를 활용하여 자신의 전문 포트폴리오 및 PT를 최적화하는 전략</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="flex items-center justify-center w-6 h-6 rounded-full bg-fuchsia-100 text-fuchsia-600 text-xs mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <p class="text-sm font-semibold text-slate-700">노사발전재단 경력 설계 경험을 투영한 연령대별·직무별 맞춤 이직 가이드</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200">
+                        <h4 class="text-base font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4">대표 커리큘럼 구성</h4>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center text-sm border-b border-slate-100 pb-2">
+                                <span class="font-medium text-slate-700">AI 채용 면접 대응 프로세스 완벽 분석</span>
+                                <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1 rounded-full font-bold">3 Hours</span>
+                            </li>
+                            <li class="flex justify-between items-center text-sm border-b border-slate-100 pb-2">
+                                <span class="font-medium text-slate-700">생성형 AI로 빌드하는 원페이지 포트폴리오</span>
+                                <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1 rounded-full font-bold">4 Hours</span>
+                            </li>
+                            <li class="flex justify-between items-center text-sm border-b border-slate-100 pb-2">
+                                <span class="font-medium text-slate-700">공공부문/일반기업 자소서 구조화 코칭</span>
+                                <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1 rounded-full font-bold">5 Hours</span>
+                            </li>
+                            <li class="flex justify-between items-center text-sm">
+                                <span class="font-medium text-slate-700">이직 및 전향 자를 위한 생애 경력 설계</span>
+                                <span class="text-xs bg-fuchsia-100 text-fuchsia-700 px-2.5 py-1 rounded-full font-bold">Best 6H</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab: 리더십 & 소통 & 조직문화 -->
+            <div id="tab-content-leadership" class="tab-pane hidden space-y-8 animate-fadeIn">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 bg-fuchsia-50 rounded-lg text-fuchsia-600 text-xs font-bold">
+                            <i class="fa-solid fa-users"></i>인간 존중과 회복 중심의 성장
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-slate-900">리더십 & 소통 & 조직문화</h3>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                            급변하는 환경에서 구성원이 번아웃을 예방하고 조직에 온전히 몰입할 수 있도록 회복탄력성과 자기 돌봄을 제시합니다. 군부대(해병대 등), 복지재단, 공공노동조직 등의 소통을 원활하게 돕는 현장 밀착형 솔루션입니다.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3">
+                                <span class="flex items-center justify-center w-6 h-6 rounded-full bg-fuchsia-100 text-fuchsia-600 text-xs mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <p class="text-sm font-semibold text-slate-700">보어아웃(Boreout)/번아웃 예방을 위한 자기 발견과 심리적 회복탄력성</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="flex items-center justify-center w-6 h-6 rounded-full bg-fuchsia-100 text-fuchsia-600 text-xs mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <p class="text-sm font-semibold text-slate-700">장병 및 실무 청년들을 이끄는 셀프리더십 및 팔로워십, 팀 응집력 강화 팀빌딩</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="flex items-center justify-center w-6 h-6 rounded-full bg-fuchsia-100 text-fuchsia-600 text-xs mt-0.5"><i class="fa-solid fa-check"></i></span>
+                                <p class="text-sm font-semibold text-slate-700">감정노동 관리, 비폭력 소통, 갈등 관리 등 갈등 속에서 협력을 이끄는 커뮤니케이션</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200">
+                        <h4 class="text-base font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4">대표 커리큘럼 구성</h4>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center text-sm border-b border-slate-100 pb-2">
+                                <span class="font-medium text-slate-700">번아웃 방지를 위한 회복탄력성과 자기돌봄</span>
+                                <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1 rounded-full font-bold">4 Hours</span>
+                            </li>
+                            <li class="flex justify-between items-center text-sm border-b border-slate-100 pb-2">
+                                <span class="font-medium text-slate-700">1인가구발굴단 및 자원봉사 팀빌딩 워크숍</span>
+                                <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1 rounded-full font-bold">4 Hours</span>
+                            </li>
+                            <li class="flex justify-between items-center text-sm border-b border-slate-100 pb-2">
+                                <span class="font-medium text-slate-700">조직 활성화를 위한 회복적 소통과 리더십</span>
+                                <span class="text-xs bg-slate-200 text-slate-700 px-2.5 py-1 rounded-full font-bold">6 Hours</span>
+                            </li>
+                            <li class="flex justify-between items-center text-sm">
+                                <span class="font-medium text-slate-700">장병 맞춤 위기관리 셀프리더십 코스</span>
+                                <span class="text-xs bg-fuchsia-100 text-fuchsia-700 px-2.5 py-1 rounded-full font-bold">Best 3H</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Roadmap / Career Timeline Section -->
+<section id="roadmap" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-base font-bold text-fuchsia-600 tracking-wider uppercase">ROADMAP</h2>
+            <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">지나온 흔적이 곧 브랜드의 자산입니다</p>
+            <p class="mt-4 text-slate-500 text-sm sm:text-base">웹 기술의 백그라운드와 교육공학 설계력을 융합한 배상희 대표의 독보적인 이력 단계입니다.</p>
+            <div class="mt-4 h-1 w-16 bg-gradient-to-r from-fuchsia-600 to-pink-600 mx-auto rounded-full"></div>
+        </div>
+
+        <!-- Vertical Timeline Block -->
+        <div class="relative border-l border-slate-200 max-w-4xl mx-auto pl-6 sm:pl-10 space-y-12">
+            
+            <!-- Timeline Item 1 -->
+            <div class="relative">
+                <span class="absolute -left-[38px] sm:-left-[54px] top-1.5 flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-fuchsia-600 text-white ring-4 ring-white shadow-md">
+                    <i class="fa-solid fa-crown text-xs sm:text-sm"></i>
+                </span>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:border-fuchsia-500 hover:shadow-lg transition-all">
+                    <span class="inline-block px-3 py-1 text-xs font-bold text-fuchsia-700 bg-fuchsia-50 border border-fuchsia-200 rounded-full mb-3">현재</span>
+                    <h3 class="text-xl font-bold text-slate-900">SH교육컨설팅 설립 및 대표 임무</h3>
+                    <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+                        공공기관·공기업·대기업 전담 생성형 AI 리터러시 전사 과정 설계 및 데이터 기반 스마트행정 실증 강의 기획 총괄. 실물 기기(3D펜, 드론 등)와 온라인 협업툴을 결합한 하이브리드 성과 교수 모델 개발.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="relative">
+                <span class="absolute -left-[38px] sm:-left-[54px] top-1.5 flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-blue-500 text-white ring-4 ring-white shadow-md">
+                    <i class="fa-solid fa-person-military-pointing text-xs sm:text-sm"></i>
+                </span>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all">
+                    <span class="inline-block px-3 py-1 text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200 rounded-full mb-3">위촉 / 전문위원</span>
+                    <h3 class="text-xl font-bold text-slate-900">다양한 정부 기관 및 군 조직 전문 위원 위촉</h3>
+                    <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+                        병무청 사회복무연수센터, 해병대 리더십센터 위촉 강사로 군 조직원들의 디지털 소통 및 위기관리 리더십을 주도하였으며, 인사혁신처 규제혁신 강사 및 노사발전재단 경력 설계 전문가로 활약함.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="relative">
+                <span class="absolute -left-[38px] sm:-left-[54px] top-1.5 flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-purple-500 text-white ring-4 ring-white shadow-md">
+                    <i class="fa-solid fa-compass-drafting text-xs sm:text-sm"></i>
+                </span>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:border-purple-500 hover:shadow-lg transition-all">
+                    <span class="inline-block px-3 py-1 text-xs font-bold text-purple-700 bg-purple-50 border border-purple-200 rounded-full mb-3">부산 지역 사회혁신</span>
+                    <h3 class="text-xl font-bold text-slate-900">부산노동권익센터 대표강사 임명</h3>
+                    <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+                        부산 지역 노동현장 실무자 및 사회복지 현장 전문가들을 대상으로 소통, 갈등 해소, 디지털 역량 강화를 지속 강의하며 자원봉사 및 사회복지 네트워크 활성화를 이끔.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Timeline Item 4 -->
+            <div class="relative">
+                <span class="absolute -left-[38px] sm:-left-[54px] top-1.5 flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-slate-400 text-white ring-4 ring-white shadow-md">
+                    <i class="fa-solid fa-network-wired text-xs sm:text-sm"></i>
+                </span>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:border-slate-400 hover:shadow-lg transition-all">
+                    <span class="inline-block px-3 py-1 text-xs font-bold text-slate-700 bg-slate-200 border border-slate-300 rounded-full mb-3">기반 다지기</span>
+                    <h3 class="text-xl font-bold text-slate-900">동아대학교 정보통신처 웹마스터 & 헬프데스크</h3>
+                    <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+                        대학 IT 인프라 전반을 책임지고 정보 서비스 고도화를 조율하면서 오늘날의 AI 리터러시, 메타버스 교육의 근본적인 에듀테크 백그라운드를 공고히 확립하는 시기.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Philosophy & Methods Section -->
+<section id="philosophy" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+    <div class="absolute inset-0 z-0 opacity-20">
+        <div class="absolute top-1/2 left-1/4 w-96 h-96 bg-fuchsia-600 rounded-full filter blur-3xl"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-base font-bold text-fuchsia-400 tracking-wider uppercase">PHILOSOPHY</h2>
+            <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-white tracking-tight">배상희만의 3가지 약속</p>
+            <p class="mt-4 text-slate-400 text-sm sm:text-base">강의실을 나서는 수강생들의 행동 변화를 만드는 차별화된 교수 원칙입니다.</p>
+            <div class="mt-4 h-1 w-16 bg-gradient-to-r from-fuchsia-500 to-purple-500 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Card 1 -->
+            <div class="bg-slate-800/50 p-8 rounded-3xl border border-slate-700/60 hover:border-fuchsia-500 hover:-translate-y-1 transition-all">
+                <div class="w-12 h-12 bg-fuchsia-500/10 border border-fuchsia-500/30 rounded-2xl flex items-center justify-center text-fuchsia-400 mb-6 text-xl">
+                    <i class="fa-solid fa-person-circle-check"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-white">100% 실습형 커리큘럼</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    이론 중심의 무미건조한 전달은 사양합니다. 강의 도중 학습자 전원이 직접 실습 도구를 조작해 보고 결과물을 산출할 수 있는 철저한 활동주의 환경을 지향합니다.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-slate-800/50 p-8 rounded-3xl border border-slate-700/60 hover:border-fuchsia-500 hover:-translate-y-1 transition-all">
+                <div class="w-12 h-12 bg-blue-500/10 border border-blue-500/30 rounded-2xl flex items-center justify-center text-blue-400 mb-6 text-xl">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-white">수업의 게임화(Gamification)</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    에듀테크 요소를 결합하여 퀴즈, 팀빌딩 미션, 토론 경합 등의 규칙을 설계합니다. 지치기 쉬운 오후 교육 시간대에도 높은 몰입도와 열띤 참여율을 보장합니다.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-slate-800/50 p-8 rounded-3xl border border-slate-700/60 hover:border-fuchsia-500 hover:-translate-y-1 transition-all">
+                <div class="w-12 h-12 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl flex items-center justify-center text-emerald-400 mb-6 text-xl">
+                    <i class="fa-solid fa-sliders"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-white">현장 맞춤형 맥락화</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    공무원, 대기업 제조팀, 대학생 등 타겟의 일상 업무 맥락을 사전 수집하여 교육 당일 예시 시나리오에 직접 반영합니다. 현실과 동떨어진 예시는 일절 사용하지 않습니다.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Clients / Deliveries Section -->
+<section id="clients" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <h2 class="text-base font-bold text-fuchsia-600 tracking-wider uppercase">ACHIEVEMENTS</h2>
+            <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">출강 및 검증된 성과 현황</p>
+            <p class="mt-4 text-slate-500 text-sm sm:text-base">대한민국의 행정기관, 대기업, 고등교육기관이 이미 배상희 대표의 프로그램을 검증하였습니다.</p>
+            <div class="mt-4 h-1 w-16 bg-gradient-to-r from-fuchsia-600 to-pink-600 mx-auto rounded-full"></div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="flex flex-wrap justify-center gap-2 mb-10 max-w-xl mx-auto">
+            <button onclick="filterClients('all')" id="btn-client-all" class="client-filter-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all bg-slate-900 text-white shadow">
+                전체보기
+            </button>
+            <button onclick="filterClients('public')" id="btn-client-public" class="client-filter-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all bg-white text-slate-700 border border-slate-200 hover:bg-slate-50">
+                공공기관·공기업
+            </button>
+            <button onclick="filterClients('corporate')" id="btn-client-corporate" class="client-filter-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all bg-white text-slate-700 border border-slate-200 hover:bg-slate-50">
+                대기업·민간기업
+            </button>
+            <button onclick="filterClients('edu')" id="btn-client-edu" class="client-filter-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all bg-white text-slate-700 border border-slate-200 hover:bg-slate-50">
+                대학교·교육기관
+            </button>
+        </div>
+
+        <!-- Clients Grid -->
+        <div id="clients-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            
+            <!-- Public Entities -->
+            <div class="client-card bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="public">
+                <div>
+                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold text-blue-700 bg-blue-50 rounded mb-2">공공기관</span>
+                    <h4 class="text-sm sm:text-base font-extrabold text-slate-900">질병관리청</h4>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">공무원 스마트 행정 효율화 교육</p>
+            </div>
+
+            <div class="client-card bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="public">
+                <div>
+                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold text-blue-700 bg-blue-50 rounded mb-2">공공기관</span>
+                    <h4 class="text-sm sm:text-base font-extrabold text-slate-900">보건복지부</h4>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">스마트행정 실습 과정 운영</p>
+            </div>
+
+            <div class="client-card bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="public">
+                <div>
+                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold text-blue-700 bg-blue-50 rounded mb-2">공기업</span>
+                    <h4 class="text-sm sm:text-base font-extrabold text-slate-900">한국수력원자력</h4>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">생성형 AI 및 데이터리터러시</p>
+            </div>
+
+            <div class="client-card bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="public">
+                <div>
+                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold text-blue-700 bg-blue-50 rounded mb-2">공기업</span>
+                    <h4 class="text-sm sm:text-base font-extrabold text-slate-900">국민건강보험공단</h4>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">임직원 AI 데이터 역량 강화</p>
+            </div>
+
+            <div class="client-card bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="public">
+                <div>
+                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold text-blue-700 bg-blue-50 rounded mb-2">공공기관</span>
+                    <h4 class="text-sm sm:text-base font-extrabold text-slate-900">국토교통부</h4>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">국토교통인재개발원 데이터리터러시</p>
+            </div>
+
+            <div class="client-card bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="public">
+                <div>
+                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold text-blue-700 bg-blue-50 rounded mb-2">공기업</span>
+                    <h4 class="text-sm sm:text-base font-extrabold text-slate-900">LH 한국토지주택공사</h4>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">생성형 AI 기반 행정 효율화</p>
+            </div>
+
+            <div class="client-card bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="public">
+                <div>
+                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold text-blue-700 bg-blue-50 rounded mb-2">공기업</span>
+                    <h4 class="text-sm sm:text-base font-extrabold text-slate-900">한국남부발전</h4>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">AI 기반 스마트 오피스 실습</p>
+            </div>
+
+            <div class="client-card bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="public">
+                <div>
+                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold text-blue-700 bg-blue-50 rounded mb-2">공기업</span>
+                    <h4 class="text-sm sm:text-base font-extrabold text-slate-900">울산항만공사</h4>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">데이터 리터러시 역량 수립</p>
+            </div>
+
+            <!-- Corporate Entities -->
+            <div class="client-card bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="corporate">
+                <div>
+                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold text-fuchsia-700 bg-fuchsia-50 rounded mb-2">대기업</span>
+                    <h4 class="text-sm sm:text-base font-extrabold text-slate-900">HD현대중공업</h4>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">생성형 AI 업무활용 및 디지털전환</p>
+            </div>
+
+            <div class="client-card bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="corporate">
+                <div>
+                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold text-fuchsia-700 bg-fuchsia-50 rounded mb-2">대기업</span>
+                    <h4 class="text-sm sm:text-base font-extrabold text-slate-900">한화생명</h4>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">데이터 기반의 문제 해결 과정</p>
+            </div>
+
+            <div class="client-card bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="corporate">
+                <div>
+                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold text-fuchsia-700 bg-fuchsia-50 rounded mb-2">대기업</span>
+                    <h4 class="text-sm sm:text-base font-extrabold text-slate-900">매일유업</h4>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">생성형 AI 업무 특강 및 실습</p>
+            </div>
+
+            <div class="client-card bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="corporate">
+                <div>
+                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold text-fuchsia-700 bg-fuchsia-50 rounded mb-2">민간기업</span>
+                    <h4 class="text-sm sm:text-base font-extrabold text-slate-900">고려제강</h4>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">디지털 트랜스포메이션 역량</p>
+            </div>
+
+            <div class="client-card bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="corporate">
+                <div>
+                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold text-fuchsia-700 bg-fuchsia-50 rounded mb-2">대기업군</span>
+                    <h4 class="text-sm sm:text-base font-extrabold text-slate-900">동아쏘시오홀딩스</h4>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">직급별 맞춤형 소통·디지털 융합</p>
+            </div>
+
+            <div class="client-card bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="corporate">
+                <div>
+                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold text-fuchsia-700 bg-fuchsia-50 rounded mb-2">금융기업</span>
+                    <h4 class="text-sm sm:text-base font-extrabold text-slate-900">KB손해사정</h4>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">관리자용 생성형 AI 리터러시</p>
+            </div>
+
+            <!-- Education / Academia -->
+            <div class="client-card bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="edu">
+                <div>
+                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold text-emerald-700 bg-emerald-50 rounded mb-2">국립대학교</span>
+                    <h4 class="text-sm sm:text-base font-extrabold text-slate-900">경북대학교</h4>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">교수자 대상 하이브리드 교수 설계</p>
+            </div>
+
+            <div class="client-card bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="edu">
+                <div>
+                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold text-emerald-700 bg-emerald-50 rounded mb-2">국립대학교</span>
+                    <h4 class="text-sm sm:text-base font-extrabold text-slate-900">부경대학교</h4>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">학생 데이터리터러시 및 디자인씽킹</p>
+            </div>
+
+            <div class="client-card bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="edu">
+                <div>
+                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold text-emerald-700 bg-emerald-50 rounded mb-2">대학교</span>
+                    <h4 class="text-sm sm:text-base font-extrabold text-slate-900">동아대학교</h4>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">메타버스 및 온라인 에듀테크 강의</p>
+            </div>
+
+            <div class="client-card bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="edu">
+                <div>
+                    <span class="inline-block px-2 py-0.5 text-[10px] font-bold text-emerald-700 bg-emerald-50 rounded mb-2">교육기관</span>
+                    <h4 class="text-sm sm:text-base font-extrabold text-slate-900">해양수산연수원</h4>
+                </div>
+                <p class="text-xs text-slate-500 mt-2">신입사원 및 리더 교육 설계</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Lecture Inquiry Contact Section -->
+<section id="contact" class="py-20 bg-slate-900 text-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            
+            <!-- Left Contact Info and Guidance -->
+            <div class="lg:col-span-5 space-y-6">
+                <span class="inline-block px-3 py-1 bg-fuchsia-500/10 border border-fuchsia-500/20 text-fuchsia-400 text-xs font-bold rounded-lg uppercase">Contact Partner</span>
+                <h2 class="text-3xl font-extrabold tracking-tight">강의 및 워크숍 요청하기</h2>
+                <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                    조직의 교육 목적과 대상 수준에 가장 최적화된 맞춤형 교수안을 기획해 드립니다. 아래 정보를 작성해주시면 업무일 기준 24시간 이내에 직접 연락을 드려 상의를 진행하겠습니다.
+                </p>
+
+                <div class="space-y-4 pt-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-fuchsia-400">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 font-semibold">이메일 문의</p>
+                            <p class="text-sm font-medium">shedu2817@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-fuchsia-400">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 font-semibold">유선 연락</p>
+                            <p class="text-sm font-medium">010-4848-2817 (SH교육컨설팅 행정부)</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-fuchsia-400">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 font-semibold">본사 주소</p>
+                            <p class="text-sm font-medium">전국 네트워크 오피스</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-slate-800/40 border border-slate-800 text-xs text-slate-400 leading-relaxed mt-4">
+                    <p class="font-bold text-slate-200 mb-2"><i class="fa-solid fa-circle-info mr-1 text-fuchsia-400"></i> 사전에 참고해주세요</p>
+                    <p>공공기관 및 군부대의 경우, 예산 지침에 준하는 공식 강의 단가에 맞춰 세금계산서 및 카드 결제가 완벽히 처리됩니다.</p>
+                </div>
+            </div>
+
+            <!-- Right Interactive Inquiry Form -->
+            <div class="lg:col-span-7 bg-slate-800 p-6 sm:p-10 rounded-3xl border border-slate-700 shadow-2xl relative">
+                <form id="lecture-inquiry-form" onsubmit="handleInquirySubmit(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label for="org-name" class="block text-xs font-bold text-slate-400 uppercase tracking-wide mb-1.5">기관/회사명 <span class="text-fuchsia-500">*</span></label>
+                            <input type="text" id="org-name" required placeholder="예: 한국수력원자력 교육팀" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm focus:border-fuchsia-500 focus:outline-none transition-all text-white placeholder-slate-500">
+                        </div>
+                        <div>
+                            <label for="contact-name" class="block text-xs font-bold text-slate-400 uppercase tracking-wide mb-1.5">담당자명/직급 <span class="text-fuchsia-500">*</span></label>
+                            <input type="text" id="contact-name" required placeholder="예: 홍길동 대리" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm focus:border-fuchsia-500 focus:outline-none transition-all text-white placeholder-slate-500">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label for="contact-phone" class="block text-xs font-bold text-slate-400 uppercase tracking-wide mb-1.5">연락처 <span class="text-fuchsia-500">*</span></label>
+                            <input type="tel" id="contact-phone" required placeholder="예: 010-1234-5678" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm focus:border-fuchsia-500 focus:outline-none transition-all text-white placeholder-slate-500">
+                        </div>
+                        <div>
+                            <label for="contact-email" class="block text-xs font-bold text-slate-400 uppercase tracking-wide mb-1.5">이메일 주소 <span class="text-fuchsia-500">*</span></label>
+                            <input type="email" id="contact-email" required placeholder="예: hr@company.co.kr" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm focus:border-fuchsia-500 focus:outline-none transition-all text-white placeholder-slate-500">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label for="lecture-type" class="block text-xs font-bold text-slate-400 uppercase tracking-wide mb-1.5">원하시는 강의 분야 <span class="text-fuchsia-500">*</span></label>
+                            <select id="lecture-type" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm focus:border-fuchsia-500 focus:outline-none transition-all text-white">
+                                <option value="" disabled selected>선택해주세요</option>
+                                <option value="ai">생성형 AI & 디지털 리터러시</option>
+                                <option value="pedagogy">에듀테크 & 하이브리드 교수법</option>
+                                <option value="career">AI 채용 & 커리어 코칭</option>
+                                <option value="leadership">조직 소통 & 리더십 & 회복탄력성</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="lecture-duration" class="block text-xs font-bold text-slate-400 uppercase tracking-wide mb-1.5">예상 강의 시간</label>
+                            <select id="lecture-duration" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm focus:border-fuchsia-500 focus:outline-none transition-all text-white">
+                                <option value="short">특강형 (2~3시간)</option>
+                                <option value="normal" selected>기본형 (4~6시간)</option>
+                                <option value="deep">심화형/워크숍 (8시간 이상)</option>
+                                <option value="multiple">다회차 정규 과정</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="lecture-details" class="block text-xs font-bold text-slate-400 uppercase tracking-wide mb-1.5">요청 내용 상세 (일정, 대상자 정보 등) <span class="text-fuchsia-500">*</span></label>
+                        <textarea id="lecture-details" required rows="4" placeholder="교육 일정, 학습자 대상(예: 관리자급 30명), 그리고 중점적으로 다루고 싶은 문제를 구체적으로 남겨주시면 정밀한 맞춤 제안에 큰 도움이 됩니다." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm focus:border-fuchsia-500 focus:outline-none transition-all text-white placeholder-slate-500"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 rounded-xl text-base font-bold text-white bg-gradient-to-r from-fuchsia-600 via-pink-600 to-purple-600 hover:from-fuchsia-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-fuchsia-500/20">
+                        <i class="fa-solid fa-square-poll-horizontal mr-2"></i>강의 제안서 및 견적 요청 전송
+                    </button>
+                </form>
+
+                <!-- Custom Modal Success Message (No alert!) -->
+                <div id="success-modal" class="hidden absolute inset-0 bg-slate-900/95 rounded-3xl z-20 flex flex-col items-center justify-center p-8 text-center animate-fadeIn">
+                    <div class="w-16 h-16 bg-fuchsia-500/20 border border-fuchsia-500 rounded-full flex items-center justify-center text-fuchsia-400 text-3xl mb-6">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">접수가 정상적으로 완료되었습니다!</h3>
+                    <p class="text-slate-400 text-sm max-w-md leading-relaxed mb-6">
+                        남겨주신 메일과 연락처를 통해 배상희 대표 및 담당 행정 매니저가 신속히 연락을 드리겠습니다. 고맙습니다.
+                    </p>
+                    <button onclick="closeSuccessModal()" class="px-6 py-2.5 rounded-xl text-sm font-bold bg-slate-800 text-white border border-slate-700 hover:bg-slate-700 transition-all">
+                        닫기
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center pb-8 border-b border-slate-900">
+            <!-- Footer Logo -->
+            <div class="flex items-center gap-3">
+                <img class="h-12 w-auto object-contain" 
+                     src="https://i.ifh.cc/j6Ab45.png" 
+                     alt="SH교육컨설팅 로고" 
+                     onerror="this.src='SH_Logo.png'; this.onerror=function(){ this.src='https://placehold.co/120x45/ffffff/D946EF?text=SH+Consulting'; }">
+                <div>
+                    <h4 class="text-white font-extrabold text-sm tracking-wide">SH교육컨설팅</h4>
+                    <p class="text-xs text-slate-500">Share & Help</p>
+                </div>
+            </div>
+            
+            <!-- Quick Info -->
+            <div class="text-xs text-center md:text-left space-y-1">
+                <p>대표자 : 배상희 | 사업자등록번호 : 746-15-02035</p>
+                <p>이메일 : shedu2817@gmail.com</p>
+                <p>본사 주소 : 전국 네트워크 오피스</p>
+                <p class="text-slate-600 text-[10px] mt-2">본 사이트는 임시 데모 시스템이 아닌 배상희 대표의 맞춤형 단독 포트폴리오입니다.</p>
+            </div>
+
+            <!-- Scroll Top -->
+            <div class="text-center md:text-right">
+                <a href="#home" class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-slate-900 hover:bg-fuchsia-600 hover:text-white transition-all text-slate-400" title="맨 위로">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="pt-8 text-center text-xs text-slate-600 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 SH Education Consulting. All rights reserved.</p>
+            <div class="flex gap-4">
+                <a href="#about" class="hover:text-fuchsia-500 transition-all">프로필</a>
+                <a href="#expertise" class="hover:text-fuchsia-500 transition-all">전문분야</a>
+                <a href="#roadmap" class="hover:text-fuchsia-500 transition-all">이력</a>
+                <a href="#contact" class="hover:text-fuchsia-500 transition-all">의뢰</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Interactive Logic (Vanilla JS) -->
+<script>
+    // Tab switching engine
+    function switchTab(tabId) {
+        // Hide all tab panes
+        const panes = document.querySelectorAll('.tab-pane');
+        panes.forEach(pane => pane.classList.add('hidden'));
+
+        // Show targets
+        const targetPane = document.getElementById(`tab-content-${tabId}`);
+        if(targetPane) {
+            targetPane.classList.remove('hidden');
+        }
+
+        // Active state styles for tab buttons
+        const buttons = document.querySelectorAll('.tab-btn');
+        buttons.forEach(btn => {
+            btn.className = "tab-btn px-5 py-3 rounded-xl text-sm font-bold shadow-sm transition-all bg-white text-slate-700 hover:bg-slate-50 flex items-center gap-2 border border-slate-200";
+        });
+
+        const activeBtn = document.getElementById(`tab-btn-${tabId}`);
+        if(activeBtn) {
+            activeBtn.className = "tab-btn px-5 py-3 rounded-xl text-sm font-bold shadow-sm transition-all bg-fuchsia-600 text-white flex items-center gap-2";
+        }
+    }
+
+    // Client/Achievements filtering logic
+    function filterClients(category) {
+        // Update Filter Button styles
+        const filterBtns = document.querySelectorAll('.client-filter-btn');
+        filterBtns.forEach(btn => {
+            btn.className = "client-filter-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all bg-white text-slate-700 border border-slate-200 hover:bg-slate-50";
+        });
+
+        const activeBtn = document.getElementById(`btn-client-${category}`);
+        if (activeBtn) {
+            activeBtn.className = "client-filter-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all bg-slate-900 text-white shadow";
+        }
+
+        // Show / Hide items with animation
+        const cards = document.querySelectorAll('.client-card');
+        cards.forEach(card => {
+            const itemCat = card.getAttribute('data-category');
+            if (category === 'all' || itemCat === category) {
+                card.style.display = 'flex';
+                card.style.opacity = '1';
+                card.style.transform = 'scale(1)';
+            } else {
+                card.style.display = 'none';
+                card.style.opacity = '0';
+                card.style.transform = 'scale(0.95)';
+            }
+        });
+    }
+
+    // Responsive Mobile Navigation Menu
+    const menuBtn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconBars = document.getElementById('menu-icon-bars');
+    const iconClose = document.getElementById('menu-icon-close');
+
+    menuBtn.addEventListener('click', () => {
+        const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+        menuBtn.setAttribute('aria-expanded', !isExpanded);
+        
+        mobileMenu.classList.toggle('hidden');
+        iconBars.classList.toggle('hidden');
+        iconClose.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking any link
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            iconBars.classList.remove('hidden');
+            iconClose.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    // Header Background change on scroll
+    window.addEventListener('scroll', () => {
+        const header = document.getElementById('header');
+        if (window.scrollY > 50) {
+            header.classList.remove('bg-white/80');
+            header.classList.add('bg-white', 'shadow-md', 'border-slate-200');
+        } else {
+            header.classList.add('bg-white/80');
+            header.classList.remove('shadow-md', 'border-slate-200');
+        }
+    });
+
+    // Handle Contact form submission elegantly without using alert()
+    function handleInquirySubmit(event) {
+        event.preventDefault();
+        
+        // Form field extraction
+        const orgName = document.getElementById('org-name').value;
+        const contactName = document.getElementById('contact-name').value;
+        const contactPhone = document.getElementById('contact-phone').value;
+        const contactEmail = document.getElementById('contact-email').value;
+        const lectureType = document.getElementById('lecture-type').value;
+        const lectureDuration = document.getElementById('lecture-duration').value;
+        const lectureDetails = document.getElementById('lecture-details').value;
+
+        // Simulate network submission and trigger success modal
+        const successModal = document.getElementById('success-modal');
+        successModal.classList.remove('hidden');
+        
+        // Reset the form
+        document.getElementById('lecture-inquiry-form').reset();
+    }
+
+    function closeSuccessModal() {
+        const successModal = document.getElementById('success-modal');
+        successModal.classList.add('hidden');
+    }
+</script>
+
+</body>
+</html>
